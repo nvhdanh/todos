@@ -1,0 +1,21 @@
+.Pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pagination button {
+    padding: 8px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background: #900;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.Pagination button:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+}

@@ -1,0 +1,27 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+li{
+	list-style: none
+}
+
+a{
+	color:#000;
+	text-decoration: none
+}
+
+.container{
+	max-width: 768px;
+	margin: 0 auto
+}
+
+.row{
+	display: flex;
+	align-items: center;
+}
+
+.col{
+	flex: 1 1 50%
+}

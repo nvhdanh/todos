@@ -1,0 +1,18 @@
+.InfoNav{
+	display: flex;
+	width: 450px;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+.InfoNav li a{
+	color: #444;
+	font-weight: bold;
+	border-bottom: 2px solid transparent;
+	transition: all .3s;
+	padding: 0 5px
+}
+
+.InfoNav li a.active{
+	border-bottom: 2px solid #4ba28e
+}

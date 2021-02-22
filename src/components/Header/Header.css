@@ -1,0 +1,53 @@
+header img {
+    width: 90px;
+    margin: 10px
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul li {
+    padding: 0 20px
+}
+
+header ul li a {
+    font-weight: bold;
+    font-size: 18px;
+    color: #777;
+    transition: all .3s
+}
+
+header ul li a:hover {
+    color: #333
+}
+
+header .hamburger {
+    height: 25px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .hamburger div {
+    height: 2px;
+    width: 30px;
+    background: #777;
+}
+
+header .col:nth-child(3) {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    header .col:nth-child(3) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .col:nth-child(2) {
+        display: none
+    }
+}
