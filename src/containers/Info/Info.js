@@ -7,7 +7,6 @@ import Privacy from '../../components/InfoEl/Privacy/Privacy'
 
 const Info = props => {
 	const match = useRouteMatch()
-    console.log(About)
     return (
     	<div>
     		<ul className={classes.InfoNav}>

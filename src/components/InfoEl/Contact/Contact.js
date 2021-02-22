@@ -1,6 +1,8 @@
+import classes from './Contact.module.css'
+
 const Contact = props => {
 	return (
-		<div>
+		<div className={classes.Contact}>
 			<p>Đây là cái Contact</p>
 		</div>
 	)

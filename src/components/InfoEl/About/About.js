@@ -1,6 +1,8 @@
+import classes from './About.module.css'
+
 const About = props => {
 	return (
-		<div>
+		<div className={classes.About}>
 			<p>Đây là cái About</p>
 		</div>
 	)

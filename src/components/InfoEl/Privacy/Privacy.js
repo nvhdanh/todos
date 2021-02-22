@@ -1,6 +1,8 @@
+import classes from './Privacy.module.css'
+
 const Privacy = props => {
 	return (
-		<div>
+		<div className={classes.Privacy}>
 			<p>Đây là cái Privacy</p>
 		</div>
 	)
