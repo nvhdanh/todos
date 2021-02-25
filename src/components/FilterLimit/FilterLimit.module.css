@@ -1,0 +1,31 @@
+.FilterLimit{
+	text-align: center;
+	padding: 10px 0	
+} 
+.FilterLimit input{
+	padding: 5px 20px;
+	margin: 0 5px;
+	border: 0;
+	transition: all .3s
+}
+
+.FilterLimit input[type="text"]{
+	border-bottom: 1px solid #ccc
+}
+
+.FilterLimit input[type="submit"]{
+	color: #fff;
+	font-weight: bold;
+	border-radius: 10px;
+	background: #900;
+	cursor: pointer;
+}
+
+.FilterLimit input:focus{
+	outline: 0;
+	border-bottom: 1px solid #333;
+}
+
+.FilterLimit input[type="input"]:focus{
+	border-bottom: 1px solid #333;
+}

@@ -4,6 +4,7 @@ import axios from 'axios'
 import TodoItems from '../../components/TodoItems/TodoItems'
 import Pagination from '../../components/Pagination/Pagination'
 import Search from '../../components/Search/Search'
+import FilterLimit from '../../components/FilterLimit/FilterLimit'
 
 const TodoList = props => {
     const [todos, setTodos] = useState([])
@@ -12,8 +13,6 @@ const TodoList = props => {
         _page: 1,
         _limit: 8,
     })
-    const [date,setDate] = useState(new Date())
-    let dateRef = useRef(null)
 
     useEffect(() => {
     	let queryArr = []
@@ -45,9 +44,18 @@ const TodoList = props => {
         })
     },[])
 
+    const handleFilterLimitChange = (newLimit)=>{
+        console.log(newLimit)
+        setFilters({
+            ...filters,
+            _limit: newLimit
+        })
+    }
+
     return (
         <section className="container">
         	<Search onSearch = {handleSearchChange}/>
+            <FilterLimit onFilterLimit = {handleFilterLimitChange} />
 			<TodoItems todos={todos}/>
 			<Pagination pagination={pagination} onPageChange={handlePageChange}/>
 		</section>
