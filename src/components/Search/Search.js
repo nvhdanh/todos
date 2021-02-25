@@ -3,7 +3,6 @@ import React, { useState, useRef } from 'react'
 import classes from './Search.module.css'
 
 const Search = props => {
-    console.log('Search rendering', props)
     const { onSearch } = props
     const [formValue, setFormValue] = useState('')
     const timeoutRef = useRef(null)
