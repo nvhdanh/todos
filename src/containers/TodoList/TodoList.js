@@ -5,6 +5,7 @@ import TodoItems from '../../components/TodoItems/TodoItems'
 import Pagination from '../../components/Pagination/Pagination'
 import Search from '../../components/Search/Search'
 import FilterLimit from '../../components/FilterLimit/FilterLimit'
+import useClock from '../../hooks/useClock.js'
 
 const TodoList = props => {
     const [todos, setTodos] = useState([])
@@ -13,6 +14,8 @@ const TodoList = props => {
         _page: 1,
         _limit: 8,
     })
+
+    let clock = useClock()
 
     useEffect(() => {
     	let queryArr = []
@@ -54,6 +57,7 @@ const TodoList = props => {
 
     return (
         <section className="container">
+            <div style={{'textAlign':'center','color':'#900','fontWeight':'bold'}}>{clock}</div>
         	<Search onSearch = {handleSearchChange}/>
             <FilterLimit onFilterLimit = {handleFilterLimitChange} />
 			<TodoItems todos={todos}/>
