@@ -19,8 +19,9 @@ const Auth = props => {
 			<button onClick={handleAuthClick}>{authContext.isAuth?"Logout":"Login"}</button>
 		</form>
 	)
-
+	
 	if (authContext.isAuth) {
+
 		authForm = <Redirect to="/"/>
 	}
 

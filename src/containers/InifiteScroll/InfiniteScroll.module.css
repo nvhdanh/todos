@@ -1,0 +1,13 @@
+.InfiniteScroll{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 1000px;
+	margin: 0 auto
+}
+
+.InfiniteScroll img{
+	margin: 10px 0;
+	width: calc(25% - 15px);
+	object-fit: cover;
+}

@@ -11,14 +11,10 @@ const Header = (props) => {
 	let navList = (
 		<ul>
 			<li>
-				<NavLink exact to="/">
-					Todo List
-				</NavLink>
+				<NavLink exact to="/">Todos List</NavLink>
 			</li>
 			<li>
-				<NavLink to="/info">
-					Information
-				</NavLink>
+				<NavLink to="/info">Information</NavLink>
 			</li>
 			<li>
 				<NavLink to="/auth">Login</NavLink>
@@ -30,14 +26,13 @@ const Header = (props) => {
 		navList = (
 			<ul>
 				<li>
-					<NavLink exact to="/">
-						Todo List
-					</NavLink>
+					<NavLink exact to="/">Todo List</NavLink>
 				</li>
 				<li>
-					<NavLink to="/info">
-						Information
-					</NavLink>
+					<NavLink to="/info">Information</NavLink>
+				</li>
+				<li>
+					<NavLink to="/infinite-scroll">Infinite Scroll</NavLink>
 				</li>
 				<li>
 					<NavLink to="/logout">Logout</NavLink>
@@ -51,7 +46,7 @@ const Header = (props) => {
 			<nav>
 				<div className="container">
 					<div className="row">
-						<div className="col">
+						<div className="col" style={{flex:.3}}>
 							<NavLink to="/">
 								<img
 									src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"

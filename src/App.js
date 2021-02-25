@@ -7,6 +7,7 @@ import TodoList from "./containers/TodoList/TodoList";
 import Auth from "./containers/Auth/Auth";
 import Logout from "./containers/Logout/Logout";
 import Info from './containers/Info/Info'
+import InfiniteScroll from './containers/InifiteScroll/InfiniteScroll'
 import { AuthContext } from "./context/Auth";
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
       <Route path="/auth" component={Auth} />      
       <Route path="/info" component={Info} />
       <Route exact path="/" component={TodoList} />
-      <Redirect to="/" />
+      <Redirect to="/"/>
     </Switch>
   );
 
@@ -26,8 +27,9 @@ const App = () => {
       <Switch>
         <Route path="/logout" component={Logout} />
         <Route path="/info" component={Info} />
+        <Route path="/infinite-scroll" component={InfiniteScroll} />
         <Route exact path="/" component={TodoList} />
-        <Redirect to="/" />
+        <Redirect to="/"/>
       </Switch>
     );
   }
